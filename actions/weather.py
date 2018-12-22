@@ -15,5 +15,3 @@ class ActionGetWeather(Action):
         temp = result.get_temperature('celsius')['temp']
         dispatcher.utter_message('{} °C in {}'.format(temp,loc))
         return
-'''>python -m rasa_core_sdk.endpoint --actions actions.weather'''
-'''python -m rasa_core.run --enable_api -d models/dialogue -u models/nlu/default/current --endpoints endpoints.yml'''
