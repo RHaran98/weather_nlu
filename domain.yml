@@ -1,0 +1,32 @@
+slots:
+  PERSON:
+    type: text
+  LOC:
+    type: text
+intents:
+  - greeting
+  - how_are_you
+  - bye
+  - my_name_is
+  - get_weather
+actions:
+  - utter_greeting
+  - utter_how_i_am
+  - utter_bye
+  - utter_its_nice_to_meet_you
+  - action_get_weather
+templates:
+  utter_greeting:
+    - Hi!
+    - Hello, my friend.
+  utter_how_i_am:
+    - I am doing ok.
+    - I am good.
+    - Very well, thanks you for asking.
+  utter_bye:
+    - Bye.
+    - Good bye.
+  utter_its_nice_to_meet_you:
+    - It's nice to meet you, {PERSON}.
+    - Nice to meet you, {PERSON}.
+    - Hey there, {PERSON}
